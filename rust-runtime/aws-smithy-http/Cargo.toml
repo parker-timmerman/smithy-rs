@@ -1,6 +1,6 @@
 [package]
 name = "aws-smithy-http"
-version = "0.0.0-smithy-rs-head"
+version = "0.53.2"
 authors = [
   "AWS Rust SDK Team <aws-sdk-rust@amazon.com>",
   "Russell Cohen <rcoh@amazon.com>",
@@ -15,8 +15,8 @@ rt-tokio = ["tokio/rt", "tokio/fs", "tokio/io-util", "tokio-util/io"]
 event-stream = ["aws-smithy-eventstream"]
 
 [dependencies]
-aws-smithy-eventstream = { path = "../aws-smithy-eventstream", optional = true }
-aws-smithy-types = { path = "../aws-smithy-types" }
+aws-smithy-eventstream = { version = "0.53.1", optional = true }
+aws-smithy-types = { version = "0.53.1" }
 bytes = "1"
 bytes-utils = "0.1"
 http = "0.2.3"
